@@ -1,5 +1,12 @@
-import { useState } from 'react'
-function App() {}
 
+import ContactForm from './components/ContactForm'
 
-export default App
+function App() {
+  return (
+    <>  
+        <ContactForm />
+    </>
+  )
+}
+
+export default App; 
