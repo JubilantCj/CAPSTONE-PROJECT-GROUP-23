@@ -1,12 +1,14 @@
-
+import Header from './components/Header';
 import ContactForm from './components/ContactForm'
+import './App.css';
 
 function App() {
   return (
-    <>  
-        <ContactForm />
+    <>
+      <Header />
+      <ContactForm />
     </>
-  )
+  );
 }
 
-export default App; 
+export default App;
