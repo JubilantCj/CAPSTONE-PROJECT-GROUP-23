@@ -1,6 +1,6 @@
 import Header from './Components/Header';
 import PlanetData from './Components/PlanetData';
-import ContactForm from './components/ContactForm';
+import ContactForm from './Components/ContactForm;
 import './App.css';
 
 function App() {
