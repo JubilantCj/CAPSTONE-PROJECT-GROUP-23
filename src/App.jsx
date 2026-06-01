@@ -1,9 +1,6 @@
 import Header from './Components/Header';
 import PlanetData from './Components/PlanetData';
-<<<<<<< Updated upstream
-=======
-import ContactForm from './Components/ContactForm';
->>>>>>> Stashed changes
+import ContactForm from './Components/ContactForm;
 import './App.css';
 
 function App() {
@@ -11,6 +8,7 @@ function App() {
     <>
       <Header />
       <PlanetData />
+      <ContactForm />
     </>
   );
 }
