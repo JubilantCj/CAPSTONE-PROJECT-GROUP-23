@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Header from './Components/Header';
 import PlanetData from './Components/PlanetData';
 import './App.css';
 
