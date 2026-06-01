@@ -1,7 +1,7 @@
 import Header from './Components/Header';
 import PlanetData from './Components/PlanetData';
-import './App.css';
 import ContactForm from './components/ContactForm';
+import './App.css';
 
 function App() {
   return (
