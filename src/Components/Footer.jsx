@@ -1,45 +1,52 @@
 
 function Footer () {
     return (
-        <footer classname= "Footer">
-            <div classname= "Footer-content">
-                <div classname= "Footer-about">
-            <h3>About</h3>
+        <footer className="main-footer">
+            <div className="footer-container">
 
-        <p>Group 23 collaborated to build a responsive and user-friendly webpage.</p>
-            
-            </div>
-    
+                {/* Top Section: About */}
+                <div className="footer-top">
+                    <h3 className="footer-heading">About</h3>
+                    <p className="footer-text">
+                        Crafted with passion by TSAcademy Group 23, this capstone project stands as a testament to three months of collaborative learning, late-night coding, and transforming ideas into functional software.
+                    </p>
+                </div>
 
-            <hr/>
-            <div classname= "Footer-links">
-            
-            <p>@ 2026 Designed by <a href="https://amakandukwu.com/"
-            target="_blank" rel="noreferrer">
-                Amaka
-            </a>
-            &<a href="https://www.linkedIn.com/in/ifeomaokocha"
-            target="_blank" rel="noreferrer">
-                Ifeoma A.
-            </a>
-            </p>
-            </div>
-            </div>
+                <hr className="footer-divider" />
 
-              <div classname="footer-bottom">
-            <p> Built by <a href="https://github.com/JubilantCj/CAPSTONE-PROJECT-GROUP-23" 
-            target="_blank" rel="noreferrer">
-                Group 23.
-            </a>
-            All reights reserved
-        </p>
+                {/* Bottom Section: Copyright & Links */}
+                <div className="footer-bottom">
+                    <div className="footer-left">
+                        <p>
+                            &copy;2026 Design by{' '}
+                            <a href="https://amakandukwu.com/" target="_blank" rel="noopener noreferrer" className="footer-link">
+                                Amaka
+                            </a>{' '}
+                            &amp;{' '}
+                            <a href="https://www.linkedin.com/in/ifeomaokocha" target="_blank" rel="noopener noreferrer" className="footer-link">
+                                Ifeoma A.
+                            </a>
+                        </p>
+                        <p>
+                            Built by{' '}
+                            <a href="https://github.com/JubilantCj/CAPSTONE-PROJECT-GROUP-23" target="_blank" rel="noopener noreferrer" className="footer-link">
+                                Group23
+                            </a>
+                            . All rights reserved
+                        </p>
+                    </div>
+
+                    <div className="footer-right">
+                        <a href="https://tsacademyonline.com/" target="_blank" rel="noopener noreferrer" className="footer-logo-link">
+                            TSAcademy
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
         
 
-            <a href= "https://tsacademyonline.com/"
-            target="_blank" rel="noreferrer">TSAcademy</a>
-            </div>
-    
-        </footer>
     );
 }
 export default Footer;
