@@ -10,8 +10,8 @@ export default function App() {
     <>
       <Header />
       <PlanetData />
-      <PlanetaryTable />
       <PlanetGrid />
+      <PlanetaryTable />
       <ContactForm />
     </>
   );
