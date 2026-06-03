@@ -1,0 +1,616 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* CSS Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+  color: white;
+}
+
+p {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #051540;
+  padding-inline: 60px;
+  padding-block-end: 25px;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav>img {
+  width: 70px;
+  margin-inline-start: -15px;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-size: 3rem;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.Hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.7));
+}
+
+/* Data Section */
+.data-section {
+  background-color: white;
+  padding: 60px 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-section h2 {
+  color: #164baf;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.data-section-text {
+  max-width: 50%;
+  width: 55ch;
+}
+
+.data-section strong {
+  color: #1274a4;
+  font-weight: 600;
+}
+
+.video-container {
+  max-width: 40%;
+  border-radius: 12px;
+  overflow: hidden;
+  order: -1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Comparison Section */
+.comparison-section {
+  background-color: #f2f7ff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.comparison-section h2 {
+  color: #164baf;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.comparison-section>p {
+  color: #4b5563;
+}
+
+.picture-comparison {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.planet-card {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.planet-card img {
+  width: 100%;
+  height: 252px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  display: cover;
+}
+
+.planet-name {
+  font-weight: 600;
+}
+
+/* Table Section */
+.table-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #333333;
+}
+
+.table-header-text h2 {
+  color: #164baf;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.table-header-text p {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.table-header-text .source-text {
+  font-weight: 600;
+  color: #0f2a44;
+  margin-bottom: 12px;
+}
+
+/* Table Design */
+.table-responsive-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.planetary-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #f2f6ff;
+  /* Light bluish background from image */
+}
+
+/* Header Cells */
+.planetary-table th {
+  background-color: #1649af;
+  /* Vibrant blue header */
+  color: #ffffff;
+  padding: 14px 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #1449a7;
+}
+
+/* Standard Data Cells */
+.planetary-table td {
+  padding: 14px 16px;
+  border: 1px solid #e2ebfc;
+  color: #333333;
+  font-size: 0.9rem;
+  background-color: #f7faff;
+}
+
+/* Merged Category Sidebar Styling */
+.category-cell,
+.subcategory-cell {
+  background-color: #cbdcff !important;
+  /* Slightly darker shade for categories */
+  font-weight: 700;
+  color: #1a3b7a !important;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.empty-sub-cell {
+  background-color: #cbdcff !important;
+  border-right: none;
+}
+
+/* Highlight planet names */
+.planetary-table tbody tr td:nth-child(3),
+.planetary-table tbody tr td:nth-child(2):not(.subcategory-cell):not(.empty-sub-cell) {
+  font-weight: 500;
+}
+
+
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  padding: 60px 0;
+}
+
+.section-title {
+  color: #164baf;
+  /* Classic deep blue accent from the design */
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+/* --- Form Layout (Desktop First) --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  /* Takes up roughly half width minus the gap on desktop */
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Input Fields & Labels */
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-group label .required {
+  color: #d93025;
+  /* Red asterisk */
+  margin-left: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999999;
+}
+
+.form-group textarea {
+  height: 45px;
+  /* Matches the text input heights visually when empty */
+  resize: none;
+}
+
+.char-count {
+  font-size: 0.75rem;
+  color: #777777;
+  margin-top: 2px;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  max-width: 250px;
+  background-color: #164baf;
+  color: #ffffff;
+  border: none;
+  padding: 12px 35px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #153e8a;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #051540;
+  /* Deep navy blue from your image */
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Top Section */
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+  max-width: 600px;
+  /* Keeps the text readable and from stretching too far */
+}
+
+/* Divider Line */
+.footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 20px;
+}
+
+/* Bottom Section Layout */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.85rem;
+  color: #cccccc;
+}
+
+.footer-left p {
+  margin: 4px 0;
+}
+
+/* Links Styling */
+.footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #a0b2ff;
+  /* Subtle glow effect on hover */
+}
+
+.footer-logo-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.footer-logo-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    max-height: 250px;
+  }
+
+  .picture-comparison {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.half-width-left,
+  .form-group.half-width-right,
+  .form-group.message-area,
+  .form-group.options-area {
+    grid-column: 1 / -1;
+  }
+
+  .form-group.message-area {
+    grid-row: auto;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  nav img {
+    /* max-width: 100px; */
+    display: block;
+    margin-inline: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .data-section {
+    flex-direction: column-reverse;
+    padding: 60px 0;
+  }
+
+  .video-container {
+    max-width: 80%;
+  }
+
+  .data-section-text {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .picture-comparison {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+  }
+
+  .table-data {
+    display: none !important;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .form-group textarea {
+    height: 120px;
+  }
+
+  .submit-btn {
+    max-width: 90%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-right {
+    align-self: flex-start;
+  }
+}
