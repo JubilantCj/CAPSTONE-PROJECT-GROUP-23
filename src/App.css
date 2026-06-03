@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -42,10 +46,12 @@ header {
   padding-inline: 60px;
   padding-block-end: 25px;
 }
+
 nav {
   padding: 20px;
 }
-nav > img {
+
+nav>img {
   width: 70px;
   margin-inline-start: -15px;
 }
@@ -186,7 +192,7 @@ nav > img {
   margin-bottom: 15px;
 }
 
-.comparison-section > p {
+.comparison-section>p {
   color: #4b5563;
 }
 
@@ -211,91 +217,102 @@ nav > img {
   object-fit: cover;
   display: cover;
 }
+
 .planet-name {
   font-weight: 600;
 }
 
 /* Table Section */
-.table-data {
-  background-color: white;
-  padding: 60px 40px;
+.table-section {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #333333;
 }
 
-.table-data h2 {
+.table-header-text h2 {
   color: #164baf;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
 }
 
-.table-data > p {
-  color: #4b5563;
-  margin-bottom: 30px;
+.table-header-text p {
+  color: #555555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
 
-.table-wrapper {
+.table-header-text .source-text {
+  font-weight: 600;
+  color: #0f2a44;
+  margin-bottom: 12px;
+}
+
+/* Table Design */
+.table-responsive-wrapper {
   overflow-x: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-table {
+.planetary-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  text-align: left;
+  background-color: #f2f6ff;
+  /* Light bluish background from image */
 }
 
-caption {
-  caption-side: top;
-  padding: 15px 10px;
+/* Header Cells */
+.planetary-table th {
+  background-color: #1649af;
+  /* Vibrant blue header */
+  color: #ffffff;
+  padding: 14px 16px;
   font-weight: 600;
-  color: #374151;
-  text-align: left;
   font-size: 0.95rem;
+  border: 1px solid #1449a7;
 }
 
-thead {
-  background-color: #164baf;
-  color: white;
+/* Standard Data Cells */
+.planetary-table td {
+  padding: 14px 16px;
+  border: 1px solid #e2ebfc;
+  color: #333333;
+  font-size: 0.9rem;
+  background-color: #f7faff;
 }
 
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border: 1px solid #e5e7eb;
-}
-
-th {
-  font-weight: 600;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #f9fafb;
-}
-
-tbody tr:hover {
-  background-color: #f3f4f6;
-}
-
-.category-header {
-  background-color: #dbeafe;
-  color: #1e3a8a;
-  font-weight: 600;
+/* Merged Category Sidebar Styling */
+.category-cell,
+.subcategory-cell {
+  background-color: #cbdcff !important;
+  /* Slightly darker shade for categories */
+  font-weight: 700;
+  color: #1a3b7a !important;
   text-align: center;
+  vertical-align: middle;
 }
 
-.subcategory {
-  background-color: #eff6ff;
-  color: #1e40af;
+.empty-sub-cell {
+  background-color: #cbdcff !important;
+  border-right: none;
+}
+
+/* Highlight planet names */
+.planetary-table tbody tr td:nth-child(3),
+.planetary-table tbody tr td:nth-child(2):not(.subcategory-cell):not(.empty-sub-cell) {
   font-weight: 500;
 }
 
+
+
 /* Contact Section */
 .contact {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-section {
@@ -303,7 +320,8 @@ tbody tr:hover {
 }
 
 .section-title {
-  color: #164baf; /* Classic deep blue accent from the design */
+  color: #164baf;
+  /* Classic deep blue accent from the design */
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -346,7 +364,8 @@ tbody tr:hover {
 }
 
 .form-group label .required {
-  color: #d93025; /* Red asterisk */
+  color: #d93025;
+  /* Red asterisk */
   margin-left: 2px;
 }
 
@@ -367,7 +386,8 @@ tbody tr:hover {
 }
 
 .form-group textarea {
-  height: 45px; /* Matches the text input heights visually when empty */
+  height: 45px;
+  /* Matches the text input heights visually when empty */
   resize: none;
 }
 
@@ -398,65 +418,80 @@ tbody tr:hover {
 }
 
 /* Footer */
-.footer {
+.main-footer {
   background-color: #051540;
-  color: white;
-  padding: 40px;
+  /* Deep navy blue from your image */
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.footer-content {
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
+  width: 100%;
 }
 
-.footer-about h3 {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+/* Top Section */
+.footer-top {
+  margin-bottom: 30px;
 }
 
-.footer-about p {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9rem;
-  max-width: 300px;
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 
-.footer-links {
-  display: flex;
-  gap: 30px;
+.footer-text {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+  max-width: 600px;
+  /* Keeps the text readable and from stretching too far */
 }
 
-.footer a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
+/* Divider Line */
+.footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 20px;
 }
 
-.footer a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
+/* Bottom Section Layout */
 .footer-bottom {
-  max-width: 1200px;
-  margin: 30px auto 0;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  align-items: flex-end;
+  font-size: 0.85rem;
+  color: #cccccc;
 }
 
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.85rem;
+.footer-left p {
+  margin: 4px 0;
+}
+
+/* Links Styling */
+.footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #a0b2ff;
+  /* Subtle glow effect on hover */
+}
+
+.footer-logo-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.footer-logo-link:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -533,13 +568,16 @@ tbody tr:hover {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+
   .data-section {
     flex-direction: column-reverse;
     padding: 60px 0;
   }
+
   .video-container {
     max-width: 80%;
   }
+
   .data-section-text {
     max-width: 80%;
     margin-bottom: 1rem;
@@ -551,7 +589,7 @@ tbody tr:hover {
   }
 
   .table-data {
-    display: none;
+    display: none !important;
   }
 
   .form-group {
@@ -566,17 +604,13 @@ tbody tr:hover {
     max-width: 90%;
   }
 
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-about p {
-    max-width: 100%;
-  }
-
   .footer-bottom {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-right {
+    align-self: flex-start;
   }
 }

@@ -22,10 +22,10 @@ function Header() {
           </p>
 
           <div className="Hero-buttons">
-            <a href="#Explore the data" className="btn-primary">
+            <a href="#planetary-table-section" className="btn-primary ">
               Explore the Data
             </a>
-            <a href="#Contact us" className="btn-secondary">
+            <a href="#contact" className="btn-secondary">
               Contact Us
             </a>
           </div>
