@@ -1,0 +1,8 @@
+footer{
+ font-display: flex; 
+ justify-content: space space-between; 
+ align-items: center;
+}
+TSAcademy{
+    margin-left: auto;
+}
