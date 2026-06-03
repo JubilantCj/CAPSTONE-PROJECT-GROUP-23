@@ -224,7 +224,7 @@ nav > img {
 }
 
 .table-data h2 {
-  color: #1e3a8a;
+  color: #164baf;
   margin-bottom: 10px;
 }
 
@@ -255,7 +255,7 @@ caption {
 }
 
 thead {
-  background-color: #1e3a8a;
+  background-color: #164baf;
   color: white;
 }
 
@@ -303,7 +303,7 @@ tbody tr:hover {
 }
 
 .section-title {
-  color: #1d52b4; /* Classic deep blue accent from the design */
+  color: #164baf; /* Classic deep blue accent from the design */
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -381,7 +381,7 @@ tbody tr:hover {
 .submit-btn {
   width: 100%;
   max-width: 250px;
-  background-color: #1d52b4;
+  background-color: #164baf;
   color: #ffffff;
   border: none;
   padding: 12px 35px;
@@ -399,7 +399,7 @@ tbody tr:hover {
 
 /* Footer */
 .footer {
-  background-color: #0f172a;
+  background-color: #051540;
   color: white;
   padding: 40px;
 }
