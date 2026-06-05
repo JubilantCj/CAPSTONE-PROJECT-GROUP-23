@@ -13,7 +13,7 @@ export default function PlanetaryTable() {
         <table className="planetary-table">
           <thead>
             <tr>
-              <th colSpan="2">Classification</th>
+              <th colSpan="2"></th>
               <th>Name</th>
               <th>Mass (10<sup>24</sup>kg)</th>
               <th>Diameter (km)</th>

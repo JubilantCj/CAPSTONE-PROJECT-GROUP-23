@@ -140,43 +140,78 @@ nav>img {
 
 /* Data Section */
 .data-section {
-  background-color: white;
-  padding: 60px 50px;
-  text-align: center;
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.data-section h2 {
-  color: #164baf;
-  font-size: 2rem;
-  font-weight: 500;
+.data-section-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  gap: 110px;
+  /* Space between video and text */
 }
 
-.data-section-text {
-  max-width: 50%;
-  width: 55ch;
-}
-
-.data-section strong {
-  color: #1274a4;
-  font-weight: 600;
-}
-
+/* Left Side: Video Layout */
 .video-container {
-  max-width: 40%;
-  border-radius: 12px;
+  position: relative;
+  width: 420px;
+  height: 420px;
+  border-radius: 28px;
+  /* Clean, heavy rounded corners from image */
   overflow: hidden;
-  order: -1;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(13, 43, 102, 0.12);
+  flex-shrink: 0;
 }
 
 .video-container video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the video fills the square without stretching */
   display: block;
 }
+
+/* Right Side: Text Layout */
+.data-section-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.data-section-text h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #164baf;
+  /* Deep blue heading */
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.data-section-text p {
+  font-size: 1rem;
+  color: #4a5568;
+  /* Readable dark gray */
+  line-height: 1.6;
+}
+
+/* Teal/blue colored keywords from the image */
+.highlight {
+  color: #1d70b8;
+  font-weight: 600;
+}
+
+.desktop-only {
+  display: block;
+}
+
 
 /* Comparison Section */
 .comparison-section {
@@ -187,8 +222,8 @@ nav>img {
 
 .comparison-section h2 {
   color: #164baf;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 
@@ -232,6 +267,7 @@ nav>img {
 
 .table-header-text h2 {
   color: #164baf;
+  font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 8px;
 }
@@ -272,7 +308,7 @@ nav>img {
   padding: 14px 16px;
   font-weight: 600;
   font-size: 0.95rem;
-  border: 1px solid #1449a7;
+  border: 1px solid #ffffff;
 }
 
 /* Standard Data Cells */
@@ -322,14 +358,14 @@ nav>img {
 .section-title {
   color: #164baf;
   /* Classic deep blue accent from the design */
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
   color: #555555;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 30px;
   max-width: 800px;
@@ -569,48 +605,60 @@ nav>img {
     font-size: 0.9rem;
   }
 
-  .data-section {
-    flex-direction: column-reverse;
-    padding: 60px 0;
-  }
+ .data-section-content {
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 30px;
+ }
 
-  .video-container {
-    max-width: 80%;
-  }
+ .video-container {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+ }
 
-  .data-section-text {
-    max-width: 80%;
-    margin-bottom: 1rem;
-  }
+ .data-section-text {
+  text-align: center;
+  max-width: 100%;
+ }
 
-  .picture-comparison {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 3rem;
-  }
+ .data-section-text h2 {
+  font-size: 1.8rem;
+ }
 
-  .table-data {
-    display: none !important;
-  }
+ .desktop-only {
+  display: none;
+ }
 
-  .form-group {
-    flex: 1 1 100%;
-  }
+.picture-comparison {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+}
 
-  .form-group textarea {
-    height: 120px;
-  }
+.table-section {
+  display: none !important;
+}
 
-  .submit-btn {
-    max-width: 90%;
-  }
+.form-group {
+  flex: 1 1 100%;
+}
 
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
+.form-group textarea {
+  height: 120px;
+}
 
-  .footer-right {
-    align-self: flex-start;
-  }
+.submit-btn {
+  max-width: 90%;
+}
+
+.footer-bottom {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-right {
+  align-self: flex-start;
+}
 }

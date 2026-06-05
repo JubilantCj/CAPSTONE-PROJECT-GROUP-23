@@ -25,7 +25,7 @@ export default function ContactForm() {
     setSubmitted(false);
 
     // Instruction 1: Log values
-    console.log("Form Values:", formData);
+    //console.log("Form Values:", formData);
 
     try {
       const formBody = new URLSearchParams();
@@ -48,11 +48,11 @@ export default function ContactForm() {
       );
 
       // Instruction 3: Check response
-      console.log("Response Status:", response.status);
+      // console.log("Response Status:", response.status);
 
       const responseText = await response.text();
 
-      console.log("Response Text:", responseText);
+      // console.log("Response Text:", responseText);
 
       if (response.status === 200) {
         setSubmitted(true);
@@ -71,7 +71,7 @@ export default function ContactForm() {
         setError("Submission failed. Please try again.");
       }
     } catch (err) {
-      console.error("Error:", err);
+      // console.error("Error:", err);
       setError("Something went wrong.");
     }
   };
