@@ -1,3 +1,5 @@
+LIVE DEPLOYMENT LINK => https://capstone-group23.netlify.app/
+
 Frontend Capstone Project – Group 23
 Project Overview
 This project is a React-based web application focused on exploring our solar system. The application recreates a provided mockup, fetches real planetary data from an external API, displays it in a responsive grid of planet cards, includes a comparative NASA data table, and features a validated contact form.
