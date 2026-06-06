@@ -8,7 +8,7 @@ function Footer() {
                 <div className="footer-top">
                     <h3 className="footer-heading">About</h3>
                     <p className="footer-text">
-                        Crafted with passion by TSAcademy Group 23, this capstone project stands as a testament to three months of collaborative learning, late-night coding, and transforming ideas into functional software.
+                        Crafted with passion by TSAcademy Group23; Efeadi, Moremi, Geralds, Chris Morgan, Manny, Kollins , ife , Jane, Akogun, Asaolu, Brian. This project stands as a testament to transforming ideas into functional software.
                     </p>
                 </div>
 
