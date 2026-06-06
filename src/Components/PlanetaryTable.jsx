@@ -108,5 +108,5 @@ function app () {
     
    
   );
-} ;
+} 
 export default PlanetaryTable;
