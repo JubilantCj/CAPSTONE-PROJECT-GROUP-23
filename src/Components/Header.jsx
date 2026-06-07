@@ -2,7 +2,7 @@ import Logo from "../assets/Images/logo.png";
 import PlanetImage from "../assets/Images/hero-section.png";
 
 
-function Header() {
+export default function Header() {
   return (
     <header className="header">
       {/* Logo */}
@@ -40,4 +40,4 @@ function Header() {
   );
 }
 
-export default Header;
+
