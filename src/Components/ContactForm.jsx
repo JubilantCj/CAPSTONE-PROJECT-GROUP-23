@@ -10,6 +10,7 @@ export default function ContactForm() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -18,45 +19,51 @@ export default function ContactForm() {
     });
   };
 
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const isFormValid =
+    formData.fullName.trim() &&
+    formData.phoneNumber.trim() &&
+    isValidEmail(formData.email) &&
+    formData.message.trim();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     setError("");
     setSubmitted(false);
 
-    // Instruction 1: Log values
-    //console.log("Form Values:", formData);
+    if (!isFormValid) {
+      setError("Please fill all fields correctly.");
+      return;
+    }
+
+    setLoading(true);
 
     try {
       const formBody = new URLSearchParams();
-
-      formBody.append("fullName", formData.fullName);
-      formBody.append("phoneNumber", formData.phoneNumber);
-      formBody.append("email", formData.email);
-      formBody.append("message", formData.message);
+      formBody.append("fullName", formData.fullName.trim());
+      formBody.append("phoneNumber", formData.phoneNumber.trim());
+      formBody.append("email", formData.email.trim());
+      formBody.append("message", formData.message.trim());
 
       const response = await fetch(
         "https://whitebricks.com/tsacademy.php",
         {
           method: "POST",
           headers: {
-            "Content-Type":
-              "application/x-www-form-urlencoded",
+            "Content-Type": "application/x-www-form-urlencoded",
           },
           body: formBody.toString(),
         }
       );
 
-      // Instruction 3: Check response
-      // console.log("Response Status:", response.status);
-
       const responseText = await response.text();
 
-      // console.log("Response Text:", responseText);
-
-      if (response.status === 200) {
+      if (response.ok) {
         setSubmitted(true);
-
         setFormData({
           fullName: "",
           phoneNumber: "",
@@ -64,15 +71,14 @@ export default function ContactForm() {
           message: "",
         });
 
-        setTimeout(() => {
-          setSubmitted(false);
-        }, 5000);
+        setTimeout(() => setSubmitted(false), 5000);
       } else {
-        setError("Submission failed. Please try again.");
+        setError(responseText || "Submission failed. Please try again.");
       }
     } catch (err) {
-      // console.error("Error:", err);
-      setError("Something went wrong.");
+      setError("Network error. Please check your connection.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -96,23 +102,15 @@ export default function ContactForm() {
           </div>
         )}
 
-        {error && (
-          <div className="error-message">
-            {error}
-          </div>
-        )}
+        {error && <div className="error-message">{error}</div>}
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-grid">
 
             <div className="form-group">
-              <label htmlFor="fullName">
-                Full Name <span className="required">*</span>
-              </label>
-
+              <label>Full Name *</label>
               <input
                 type="text"
-                id="fullName"
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
@@ -122,13 +120,9 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="email">
-                Email <span className="required">*</span>
-              </label>
-
+              <label>Email *</label>
               <input
                 type="email"
-                id="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -138,13 +132,9 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="phoneNumber">
-                Phone Number <span className="required">*</span>
-              </label>
-
+              <label>Phone Number *</label>
               <input
                 type="tel"
-                id="phoneNumber"
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
@@ -155,12 +145,8 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="message">
-                Message <span className="required">*</span>
-              </label>
-
+              <label>Message *</label>
               <textarea
-                id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
@@ -176,8 +162,12 @@ export default function ContactForm() {
 
           </div>
 
-          <button className="submit-btn" type="submit">
-            Submit
+          <button
+            className="submit-btn"
+            type="submit"
+            disabled={!isFormValid || loading}
+          >
+            {loading ? "Submitting..." : "Submit"}
           </button>
         </form>
       </div>
