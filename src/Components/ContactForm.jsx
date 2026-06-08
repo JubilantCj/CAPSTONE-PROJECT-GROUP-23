@@ -108,7 +108,9 @@ export default function ContactForm() {
           <div className="form-grid">
 
             <div className="form-group">
-              <label>Full Name *</label>
+              <label htmlFor="fullName">
+                Full Name <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="fullName"
@@ -120,7 +122,9 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label>Email *</label>
+              <label htmlFor="email">
+                Email <span className="required">*</span>
+              </label>
               <input
                 type="email"
                 name="email"
@@ -132,7 +136,9 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label>Phone Number *</label>
+              <label htmlFor="phoneNumber">
+                Phone Number <span className="required">*</span>
+              </label>
               <input
                 type="tel"
                 name="phoneNumber"
@@ -145,7 +151,9 @@ export default function ContactForm() {
             </div>
 
             <div className="form-group">
-              <label>Message *</label>
+              <label htmlFor="message">
+                Message <span className="required">*</span>
+              </label>
               <textarea
                 name="message"
                 value={formData.message}
