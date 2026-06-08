@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PlanetaryTable() {
+function PlanetaryTable () {
   return (
     <section id="planetary-table-section" className="table-section">
       <div className="table-header-text">
@@ -105,5 +105,8 @@ export default function PlanetaryTable() {
         </table>
       </div>
     </section>
+    
+   
   );
-};
+} 
+export default PlanetaryTable;
