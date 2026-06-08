@@ -17,13 +17,14 @@ Moyoresore Akogun Contributor [https://github.com/Emmanuel-Moyosore]
 Zazamanny Contributor [https://github.com/Zazamanny]
 Ife Contributor [https://github.com/Ifefront-end]
 Collins Contributor [https://github.com/ThatsKollinz]
+Jane chigozie contributor [https://github.com/codewithjenny234-design]
 BlaqYute Collaborator (No Development Contribution) [https://github.com/BlaqYute]
 
 Workflow and Contributions
 Efeadi Micheal [https://github.com/JubilantCj] and Chris Morgan [https://github.com/ChrisMorgan4499] collaborated on the Header component.
 Moremi Adekunle [https://github.com/DevMoremi] developed the Planet Grid component and implemented API integration.
 Gerald Nwabueze [https://github.com/D-Geralds] and Asaolu [https://github.com/Asaolu425] developed the Contact Form and handled data submission to the endpoint.
-Moyoresore Akogun [https://github.com/Emmanuel-Moyosore] and Ife [https://github.com/Ifefront-end] developed the Footer component.
+Moyoresore Akogun [https://github.com/Emmanuel-Moyosore] and Ife [https://github.com/Ifefront-end] and Jane chigozie contributor [https://github.com/codewithjenny234-design] developed the Footer component.
 Zazamanny [https://github.com/Zazamanny] and Brian Uket [https://github.com/Clevaranny] worked on the NASA Data Table component.
 Collins (https://github.com/ThatsKollinz) independently developed the Planetary Data component.
 Efeadi Micheal [https://github.com/JubilantCj], Moremi Adekunle [https://github.com/DevMoremi], and Chris Morgan [https://github.com/ChrisMorgan4499] collaborated on project styling to match the provided mockup.
