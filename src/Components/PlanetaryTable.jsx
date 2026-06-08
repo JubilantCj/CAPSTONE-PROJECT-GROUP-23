@@ -1,6 +1,6 @@
 import React from 'react';
 
-function app () {
+function PlanetaryTable () {
   return (
     <section id="planetary-table-section" className="table-section">
       <div className="table-header-text">
