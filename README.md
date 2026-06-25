@@ -9,14 +9,14 @@ Of the 18 students assigned to Group 23, 11 joined the project's collaboration g
 Collaborators
 Efeadi Micheal(Team Lead)[https://github.com/JubilantCj]
 Moremi Adekunle(Assistant Team Lead)[https://github.com/DevMoremi]
-Chris Morgan Contributor [https://github.com/ChrisMorgan4499]
+Uzordimma Christopher Contributor [https://github.com/ChrisMorgan4499]
 Brian Uket Contributor [https://github.com/Clevaranny]
 Gerald Nwabueze Contributor [https://github.com/D-Geralds]
 Asaolu Contributor [https://github.com/Asaolu425]
 Moyosore Akogun Contributor [https://github.com/Emmanuel-Moyosore]
-Zazamanny Contributor [https://github.com/Zazamanny]
-Ife Contributor [https://github.com/Ifefront-end]
-Collins Contributor [https://github.com/ThatsKollinz]
+Adeleye Emmanuel Contributor [https://github.com/Zazamanny]
+Margaret ifeoluwa idowu Contributor [https://github.com/Ifefront-end]
+Abel simeon Contributor [https://github.com/ThatsKollinz]
 Jane chigozie contributor [https://github.com/codewithjenny234-design]
 BlaqYute Collaborator (No Development Contribution) [https://github.com/BlaqYute]
 
@@ -27,10 +27,10 @@ BlaqYute Collaborator (No Development Contribution) [https://github.com/BlaqYute
 | Efeadi Micheal ([GitHub](https://github.com/JubilantCj)) and Chris Morgan ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on the Header component |
 | Moremi Adekunle ([GitHub](https://github.com/DevMoremi)) | Developed the Planet Grid component and implemented API integration |
 | Gerald Nwabueze ([GitHub](https://github.com/D-Geralds)) and Asaolu ([GitHub](https://github.com/Asaolu425)) | Developed the Contact Form and handled data submission to the endpoint |
-| Moyosore Akogun ([GitHub](https://github.com/Emmanuel-Moyosore)), Ife ([GitHub](https://github.com/Ifefront-end)), and Jane Chigozie ([GitHub](https://github.com/codewithjenny234-design)) | Developed the Footer component |
-| Zazamanny ([GitHub](https://github.com/Zazamanny)) and Brian Uket ([GitHub](https://github.com/Clevaranny)) | Worked on the NASA Data Table component |
-| Collins ([GitHub](https://github.com/ThatsKollinz)) | Independently developed the Planetary Data component |
-| Efeadi Micheal ([GitHub](https://github.com/JubilantCj)), Moremi Adekunle ([GitHub](https://github.com/DevMoremi)), and Chris Morgan ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on project styling to match the provided mockup |
+| Moyosore Akogun ([GitHub](https://github.com/Emmanuel-Moyosore)), Margaret ifeoluwa idowu ([GitHub](https://github.com/Ifefront-end)), and Jane Chigozie ([GitHub](https://github.com/codewithjenny234-design)) | Developed the Footer component |
+| Adeleye Emmanuel ([GitHub](https://github.com/Zazamanny)) and Brian Uket ([GitHub](https://github.com/Clevaranny)) | Worked on the NASA Data Table component |
+| Abel Simeon ([GitHub](https://github.com/ThatsKollinz)) | Independently developed the Planetary Data component |
+| Efeadi Micheal ([GitHub](https://github.com/JubilantCj)), Moremi Adekunle ([GitHub](https://github.com/DevMoremi)), and Uzordimma Christopher ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on project styling to match the provided mockup |
 
 
 Code Review and Collaboration
