@@ -17,7 +17,7 @@ Moyosore Akogun Contributor [https://github.com/Emmanuel-Moyosore]
 Adeleye Emmanuel Contributor [https://github.com/Zazamanny]
 Margaret ifeoluwa idowu Contributor [https://github.com/Ifefront-end]
 Abel simeon Contributor [https://github.com/ThatsKollinz]
-Jane chigozie contributor [https://github.com/codewithjenny234-design]
+Jane chigozie(Jennifer ohajunwa) contributor [https://github.com/codewithjenny234-design]
 BlaqYute Collaborator (No Development Contribution) [https://github.com/BlaqYute]
 
 ## Team Contributions
@@ -27,7 +27,7 @@ BlaqYute Collaborator (No Development Contribution) [https://github.com/BlaqYute
 | Efeadi Micheal ([GitHub](https://github.com/JubilantCj)) and Uzordimma Christopher ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on the Header component |
 | Moremi Adekunle ([GitHub](https://github.com/DevMoremi)) | Developed the Planet Grid component and implemented API integration |
 | Gerald Nwabueze ([GitHub](https://github.com/D-Geralds)) and Asaolu ([GitHub](https://github.com/Asaolu425)) | Developed the Contact Form and handled data submission to the endpoint |
-| Moyosore Akogun ([GitHub](https://github.com/Emmanuel-Moyosore)), Margaret ifeoluwa idowu ([GitHub](https://github.com/Ifefront-end)), and Jane Chigozie ([GitHub](https://github.com/codewithjenny234-design)) | Developed the Footer component |
+| Moyosore Akogun ([GitHub](https://github.com/Emmanuel-Moyosore)), Margaret ifeoluwa idowu ([GitHub](https://github.com/Ifefront-end)), and Jane Chigozie(Jennifer ohajunwa) ([GitHub](https://github.com/codewithjenny234-design)) | Developed the Footer component |
 | Adeleye Emmanuel ([GitHub](https://github.com/Zazamanny)) and Brian Uket ([GitHub](https://github.com/Clevaranny)) | Worked on the NASA Data Table component |
 | Abel Simeon ([GitHub](https://github.com/ThatsKollinz)) | Independently developed the Planetary Data component |
 | Efeadi Micheal ([GitHub](https://github.com/JubilantCj)), Moremi Adekunle ([GitHub](https://github.com/DevMoremi)), and Uzordimma Christopher ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on project styling to match the provided mockup |
