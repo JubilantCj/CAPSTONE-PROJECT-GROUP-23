@@ -24,7 +24,7 @@ BlaqYute Collaborator (No Development Contribution) [https://github.com/BlaqYute
 
 | Team Member(s) | Contribution |
 |---|---|
-| Efeadi Micheal ([GitHub](https://github.com/JubilantCj)) and Chris Morgan ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on the Header component |
+| Efeadi Micheal ([GitHub](https://github.com/JubilantCj)) and Uzordimma Christopher ([GitHub](https://github.com/ChrisMorgan4499)) | Collaborated on the Header component |
 | Moremi Adekunle ([GitHub](https://github.com/DevMoremi)) | Developed the Planet Grid component and implemented API integration |
 | Gerald Nwabueze ([GitHub](https://github.com/D-Geralds)) and Asaolu ([GitHub](https://github.com/Asaolu425)) | Developed the Contact Form and handled data submission to the endpoint |
 | Moyosore Akogun ([GitHub](https://github.com/Emmanuel-Moyosore)), Margaret ifeoluwa idowu ([GitHub](https://github.com/Ifefront-end)), and Jane Chigozie ([GitHub](https://github.com/codewithjenny234-design)) | Developed the Footer component |
