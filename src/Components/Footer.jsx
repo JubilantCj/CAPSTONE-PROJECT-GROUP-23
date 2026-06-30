@@ -8,7 +8,30 @@ function Footer() {
                 <div className="footer-top">
                     <h3 className="footer-heading">About</h3>
                     <p className="footer-text">
-                        Crafted with passion by TSAcademy Group23; Efeadi, Moremi, Geralds, Chris Morgan, Manny, Kollins , ife , Jane, Akogun, Asaolu, Brian. This project stands as a testament to transforming ideas into functional software.
+                        Crafted with passion by TSAcademy Group23; 
+                        <a href= "https://github.com/JubilantCj" target = "_blank" rel = "noopener noreferrer" className = "footer-link">
+                        Efeadi,</a>{' '}
+                        &amp;{' '} 
+                        <a href= "https://github.com/DevMoremi" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Moremi,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/D-Geralds" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Geralds,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/ChrisMorgan4499" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Chris Morgan,</a>{''}
+                        &amp;{''}
+                        <a href= "https://github.com/Zazamanny" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Manny,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/ThatsKollinz" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Kollins,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/Ifefront-end" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Ife,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/codewithjenny234-design" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Jane,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/Emmanuel-Moyosore" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Akogun,</a>{' '}
+                        &amp;{' '} 
+                        <a href= "https://github.com/Asaolu425" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Asaolu,</a>{' '}
+                        &amp;{' '}
+                        <a href= "https://github.com/Clevaranny" target = "_blank" rel = "noopener noreferrer" className = "footer-link">Brian,</a>{' '}
+                        &amp;{' '} This project stands as a testament to transforming ideas into functional software.
                     </p>
                 </div>
 
