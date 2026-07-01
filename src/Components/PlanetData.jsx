@@ -7,7 +7,7 @@ function PlanetData() {
                 
                 {/* Left Side: Video Container */}
                 <div className='video-container'>
-                    <video src={PlanetVideo} controls autoPlay loop muted>
+                    <video src={PlanetVideo} controls autoPlay loop muted playsInline>
                         Your browser does not support the video tag.
                     </video>
                 </div>
