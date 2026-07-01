@@ -159,12 +159,12 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Enter your message"
-                maxLength={500}
+                maxLength={100}
                 required
               />
 
               <div className="char-count">
-                {formData.message.length} / 500 characters
+                {formData.message.length} / 100 characters
               </div>
             </div>
 
