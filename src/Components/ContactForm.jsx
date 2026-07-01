@@ -110,7 +110,7 @@ export default function ContactForm() {
             <div className="form-group">
               <label htmlFor="fullName">
                 Full Name <span className="required">*</span>
-              </label>
+                </label>
               <input
                 type="text"
                 name="fullName"
@@ -124,7 +124,7 @@ export default function ContactForm() {
             <div className="form-group">
               <label htmlFor="email">
                 Email <span className="required">*</span>
-              </label>
+                </label>
               <input
                 type="email"
                 name="email"
@@ -138,7 +138,7 @@ export default function ContactForm() {
             <div className="form-group">
               <label htmlFor="phoneNumber">
                 Phone Number <span className="required">*</span>
-              </label>
+                </label>
               <input
                 type="tel"
                 name="phoneNumber"
@@ -153,18 +153,18 @@ export default function ContactForm() {
             <div className="form-group">
               <label htmlFor="message">
                 Message <span className="required">*</span>
-              </label>
+                </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Enter your message"
-                maxLength={500}
+                maxLength={100}
                 required
               />
 
               <div className="char-count">
-                {formData.message.length} / 500 characters
+                {formData.message.length} / 100 characters
               </div>
             </div>
 
