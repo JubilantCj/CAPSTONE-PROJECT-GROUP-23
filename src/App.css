@@ -242,6 +242,7 @@ nav>img {
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 .planet-card img {
@@ -250,7 +251,6 @@ nav>img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
-  display: cover;
 }
 
 .planet-name {
